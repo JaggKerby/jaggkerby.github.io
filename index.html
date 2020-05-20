@@ -1,211 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To2rent</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Condensed&display=swap&subset=cyrillic"
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap&subset=cyrillic"
         rel="stylesheet">
+    <title>MartaUP</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo header__logo">
-            <a class="logo__link" href="#">
-                <img class="logo__link-img" src="img/logo.svg" alt="logo">
-            </a>
-        </div>
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__list-item">
-                    <a class="menu__list-link menu__list-link--active" href="#">О нас</a>
-                </li>
-                <li class="menu__list-item">
-                    <a class="menu__list-link" href="#">Дома</a>
-                </li>
-                <li class="menu__list-item">
-                    <a class="menu__list-link" href="#">Квартиры</a>
-                </li>
-                <li class="menu__list-item">
-                    <a class="menu__list-link" href="#">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section class="slider">
-        <div class="slider__item" style="background-image: url(img/slider-item.jpg);"></div>
-        <div class="slider__item" style="background-image: url(img/slider-item.jpg);"></div>
-        <div class="slider__item" style="background-image: url(img/slider-item.jpg);"></div>
-    </section>
-    <section class="search">
-        <div class="search__inner">
-            <form class="search__form">
-                <label class="search__form-label" for="input">Поиск аппартаментов</label>
-                <input class="search__form-input" #input type="text" placeholder="Введите город">
-                <button class="search__form-btn" type="submit">Найти</button>
-            </form>
-        </div>
-    </section>
-    <section class="popular">
-        <h3 class="popular__title">Самые популярные варианты</h3>
+    <header class="header header__background">
         <div class="container">
-            <div class="popular__inner">
-                <div class="popular__item">
-                    <img class="popular__img" src="img/popular1.jpg" alt="popular">
-                    <h5 class="popular__item-title">Апартаменты<br> Москва</h5>
-                    <a class="popular__link" href="#">Детали</a>
+            <div class="header__inner">
+                <div class="logo">
+                    <a class="logo__link" href="#">
+                        <img class="logo__link-img" src="img/logo.png" alt="logo">
+                        <span class="logo__name">MartaUP</span>
+                    </a>
                 </div>
-                <div class="popular__item">
-                    <img class="popular__img" src="img/popular2.jpg" alt="popular">
-                    <h5 class="popular__item-title">Апартаменты <br>Киев</h5>
-                    <a class="popular__link" href="#">Детали</a>
-                </div>
-                <div class="popular__item">
-                    <img class="popular__img" src="img/popular3.jpg" alt="popular">
-                    <h5 class="popular__item-title">Коттедж Modern <br> Лос Анджелес</h5>
-                    <a class="popular__link" href="#">Детали</a>
-                </div>
-                <div class="popular__item">
-                    <img class="popular__img" src="img/popular4.jpg" alt="popular">
-                    <h5 class="popular__item-title">Коттедж Семейный <br> Лондон</h5>
-                    <a class="popular__link" href="#">Детали</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="reason">
-        <div class="container">
-            <div class="reaser__inner">
-                <div class="reason__item">
-                    <h4 class="reason__title reason__title--icon1">Мы экономим Ваше время и Ваши деньги</h4>
-                    <p class="reason__text">Вы можете легко подобрать себе самую лучшую недвижимость
-                        для аренды на нашем сайте по выгодной цене.
-                        Наши менеджеры с удовольствием помогут Вам и ответят на все вопросы.</p>
-                    <a class="reason__link" href="#">Подробнее</a>
-                </div>
-                <div class="reason__item">
-                    <h4 class="reason__title reason__title--icon2">Арендуйте лучшую недвижимость в крупных городах </h4>
-                    <p class="reason__text">Наша база элитной недвижимости насчитывает более 5000 вариантов в
-                        крупных городах мира.Мы поможем Вам выбрать самую лучшую,
-                        также предоставим дополнительный сервис</p>
-                    <a class="reason__link" href="#">Подробнее</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="best" style="background-image: url(img/best.jpg);">
-        <div class="container">
-            <h3 class="best__title">Коттедж Modern
-                Лос Анджелес</h3>
-            <a class="best__link" href="#">Забронировать</a>
-        </div>
-    </section>
-    <section class="info">
-        <div class="container">
-            <div class="info__inner">
-                <div class="our__managers">
-                    <h4 class="our-managers__title about__title">Наши менеджеры</h4>
-                    <div class="our-managers__items">
-                        <div class="our-managers__item">
-                            <img class="our-mangers__img" src="img/manager1.jpg" alt="manager">
-                            <ul class="our-managers__list">
-                                <li class="our-managers__location">Макс</li>
-                                <li class="our-managers__name">30 лет</li>
-                                <li class="our-managers__age">Москва</li>
-                            </ul>
-                            <button class="our-managers__btn">Связаться</button>
-                        </div>
-                        <div class="our-managers__item">
-                            <img class="our-mangers__img" src="img/manager2.jpg" alt="manager">
-                            <ul class="our-managers__list">
-                                <li class="our-managers__location">Анна</li>
-                                <li class="our-managers__name">28 лет</li>
-                                <li class="our-managers__age">Киев</li>
-                            </ul>
-                            <button class="our-managers__btn">Связаться</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog">
-                    <h4 class="about__title">Блог</h4>
-                    <ul class="blog__list">
-                        <li class="blog__item">
-                            <a class="blog__link" href="#">Системы охраны и видеонаблюдения</a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link menu__list-link--active" href="#">Home</a>
                         </li>
-                        <li class="blog__item">
-                            <a class="blog__link" href="#">Клубная недвижимость всегда в цене</a>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Work</a>
                         </li>
-                        <li class="blog__item">
-                            <a class="blog__link" href="#">Все плюсы от посуточной аренды квартир</a>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">About</a>
                         </li>
-                        <li class="blog__item">
-                            <a class="blog__link" href="#">Как выбрать жильё своей мечты в Киеве?</a>
-                        </li>
-                        <li class="blog__item">
-                            <a class="blog__link" href="#">Топ 10 ВИП коттеджей Лос Анджелеса</a>
-                        </li>
-                        <li class="blog__item">
-                            <a class="blog__link" href="#">Лучшие аппартаменты с панорамным видом</a>
-                        </li>
-                        <li class="blog__item">
-                            <a class="blog__link" href="#">Дома для аренды на год в Майами</a>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Contact</a>
                         </li>
                     </ul>
+                </nav>
+            </div>
+            <section class="slider">
+                <div class="slider__inner">
+                    <h2 class="slider__header">We Build Apps & Websites
+                        for Your Business
+                    </h2>
+                    <p class="slider__text">For startups, For businesses & For you</p>
+                    <button class="slider__btn">Request a quote</button>
                 </div>
-                <div class="reviews">
-                    <h4 class="about__title">Отзывы</h4>
-                    <img class="reviews__img" src="img/reviews.jpg" alt="reviews">
-                    <p class="reviews__txt">
-                        Это лучший сервис по подбору
-                        аппартаментов. Пользуюсь услугами To rent уже 5 лет.
-                        Всегда идеально и именно то, что мне нужно.
+                <img src="img/Icon-head.svg" alt="we" class="slider__img">
+            </section>
+        </div>
+    </header>
+    <section class="ability ability__img">
+        <div class="container">
+            <h2 class="ability__title">We are specialised in</h2>
+            <div class="ability__inner">
+                <div class="ability__item">
+                    <img class="ability__img" src="img/ux.svg" alt="ux ability">
+                    <h5 class="ability__item-title">UI/UX Design</h5>
+                    <p class="ability__item-txt">In hac habitasse platea dictumstmus adipiscing
+                        fermentum quam volutpat aliquam.
+                        Integer cilisis tristique.
                     </p>
-                    <a class="reviews__link" href="#">Еще отзывы</a>
+                </div>
+                <div class="ability__item">
+                    <img class="ability__img" src="img/webicon.svg" alt="web ability">
+                    <h5 class="ability__item-title">Web Development</h5>
+                    <p class="ability__item-txt">In hac habitasse platea dictumstmus adipiscing
+                        fermentum quam volutpat aliquam.
+                        Integer cilisis tristique.
+                    </p>
+                </div>
+                <div class="ability__item">
+                    <img class="ability__img" src="img/appdevicon.svg" alt="appdev ability">
+                    <h5 class="ability__item-title">App Development</h5>
+                    <p class="ability__item-txt">In hac habitasse platea dictumstmus adipiscing
+                        fermentum quam volutpat aliquam.
+                        Integer cilisis tristique.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="footer__top">
-            <div class="container">
-                <div class="footer__top-inner">
-                    <nav class="footer__menu">
-                        <ul class="footer__menu-list">
-                            <li class="footer__menu-item">
-                                <a class='footer__menu-link' href="#">О нас</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a class='footer__menu-link' href="#">Дома</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a class='footer__menu-link' href="#">Апартаменты</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a class='footer__menu-link' href="#">Отзывы</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a class='footer__menu-link' href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <form class="footer__form">
-                        <label class="footer__form-label">Связаться <br> с нами</label>
-                        <input class="footer__form-input" type="text" placeholder="Задать вопрос">
-                        <button class="footer__form-btn" type="submit">Отправить</button>
-                    </form>
+    <section class="workflow workflow__img">
+        <div class="container workflow__inner">
+            <section class="devteam devteam__one">
+                <div class="devteam__inner wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100">
+                    <h3 class="devteam__title">Experienced Designers &
+                        Developers
+                    </h3>
+                    <p class="devteam__txt">
+                        Nam dapibus nisl vitae elit fringilla rutrum.
+                        Aenean sollicitudin, erat a elementum rutrum,
+                        neque sem pretium metus, quis mollis nisl nunc et massa.
+                    </p>
+                    <p class="devteam__txt">Vestibulum sed metus in lorem
+                        tristique ullamcorper id vitae erat.
+                    </p>
                 </div>
+                <img class="devteam__img devteam__img-one wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100" src="img/devteam-icon.svg" alt="devteam">
+            </section>
+            <section class="devteam devteam__two">
+                <img class="devteam__img devteam__img-two wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100"src="img/prototype-icon.png" alt="prototype">
+                <div class="devteam__inner wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100">
+                    <h3 class="devteam__title">Information Architect &
+                        Visual Prototyping
+                    </h3>
+                    <p class="devteam__txt">
+                        Nam dapibus nisl vitae elit fringilla rutrum.
+                        Aenean sollicitudin, erat a elementum rutrum,
+                        neque sem pretium metus, quis mollis nisl nunc et massa.
+                    </p>
+                    <p class="devteam__txt"> Vestibulum sed metus in lorem tristique ullamcorper
+                        id vitae erat. Nulla mollis sapien sollicitudin lacinia lacinia.
+                        Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin,
+                        erat a elementum rutrum,
+                        neque sem pretium metus, quis mollis nisl nunc et massa
+                    </p>
+                </div>
+            </section>
+            <section class="devteam devteam__three">
+                <div class="devteam__inner wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100">
+                    <h3 class="devteam__title">Idea Generation &
+                        Foundation
+                    </h3>
+                    <p class="devteam__txt">Nam dapibus nisl vitae elit fringilla rutrum.
+                        Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus,
+                        quis mollis nisl nunc et massa.
+                        Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin,
+                        erat a elementum rutrum, neque sem pretium metus,
+                        quis mollis nisl nunc et massa</p>
+                </div>
+                <img class="devteam__img devteam__img-three wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100" src="img/foundation.png" alt="foundation">
+            </section>
+        </div>
+    </section>
+
+    <footer class="footer footer__background">
+        <div class="container">
+
+            <h2 class="footer__title">
+                Don’t Just Take Our<br> Words
+            </h2>
+
+            <div class="review__items">
+
+                <div class="review__item">
+                    <img class="review__item-img" src="img/user1.jpg" alt="user">
+                    <div class="review__item-title">
+                        <h6 class="review__head">Arakat Bank</h6>
+                        <p class="review__title-text">International Bank Ltd.</p>
+                    </div>
+                    <p class="review__item-txt">
+                        Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                        Donec viverra eleifend lacus, vitae ullamcorper metus.
+                        Sed sollicitudin ipsum.
+                    </p>
+                </div>
+
+                <div class="review__item">
+                    <img class="review__item-img" src="img/user2.jpg" alt="user">
+                    <div class="review__item-title">
+                        <h6 class="review__head">Chrsitopher Company Ltd.</h6>
+                        <p class="review__title-text">Design & Development</p>
+                    </div>
+                    <p class="review__item-txt">
+                        Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                        Donec viverra eleifend lacus, vitae ullamcorper metus.
+                        Sed sollicitudin ipsum.
+                    </p>
+                </div>
+
+                <div class="review__item">
+                    <img class="review__item-img" src="img/user3.jpg" alt="user">
+                    <div class="review__item-title">
+                        <h6 class="review__head">Jigsawlab Studio Inc.</h6>
+                        <p class="review__title-text">Interactive</p>
+                    </div>
+                    <p class="review__item-txt">
+                        Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                        Donec viverra eleifend lacus, vitae ullamcorper metus.
+                        Sed sollicitudin ipsum.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+
+                <nav class="menu">
+                    <ul class="menu__list menu__footer-list">
+                        <li class="footer__list-item">
+                            <a class="menu__footer-link" href="#">About Martaup</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="menu__footer-link" href="#">Help</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="menu__footer-link" href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="copy">
+                    <p class="copy__txt">&copy;&nbsp;2013-2018 All rights reserved.</p>
+                </div>
+
             </div>
         </div>
-        <div class="logo footer__logo">
-            <a class="logo__link" href="#">
-                <img class="logo__link-img" src="img/logo.svg" alt="logo">
-            </a>
-        </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/slick.min.js"></script>
+
 </body>
+<script src="js/wow.js"></script>
+<script src="js/main.js"></script>
+<script>
+    new WOW().init();
+</script>
+
 </html>
