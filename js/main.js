@@ -1,8 +1,8 @@
 //feedback slider
 $(function () {
   $('.feedback__slider').slick({
-    prevArrow: '<button class="feedback__btn arrow-prev aria-label="prev img"><i class="fas fa-long-arrow-alt-left"></i></button>',
-    nextArrow: '<button class="feedback__btn arrow-next aria-label="next img""><i class="fas fa-long-arrow-alt-right"></i></button>',
+    prevArrow: '<button class="feedback__btn arrow-prev" aria-label="prev img"><i class="fas fa-long-arrow-alt-left"></i></button>',
+    nextArrow: '<button class="feedback__btn arrow-next" aria-label="next img"><i class="fas fa-long-arrow-alt-right"></i></button>',
     infinite: true,
     centerMode: true,
     slidesToShow: 3,
